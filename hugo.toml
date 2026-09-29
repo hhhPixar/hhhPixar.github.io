@@ -1,0 +1,37 @@
+baseURL = "/"
+locale = "zh-CN"
+defaultContentLanguage = "zh-cn"
+title = "个人技术笔记"
+theme = "github-style"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = "hhhPixar"
+  description = "记录编程、工程实践与持续学习。"
+  github = "hhhPixar"
+  url = "/"
+  rss = true
+  lastmod = true
+  enableSearch = true
+  userStatusEmoji = "💻"
+  avatar = "https://github.com/hhhPixar.png"
+  headerIcon = "/images/github-mark-white.png"
+  custom_css = ["css/custom.css"]
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    noClasses = false
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
