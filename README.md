@@ -1,10 +1,13 @@
 # 个人技术笔记
 
-使用 [Hugo](https://gohugo.io/) 和 [GitHub Style](https://github.com/MeiK2333/github-style) 构建的个人技术博客。
+使用 [Hugo](https://gohugo.io/) 和官方 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题构建的个人技术博客。
 
 ## 本地开发
 
+首次克隆后先初始化主题子模块：
+
 ```bash
+git submodule update --init --recursive
 hugo server --buildDrafts
 ```
 
@@ -24,11 +27,11 @@ hugo new post/my-new-post.md
 hugo --gc --minify
 ```
 
-静态产物输出到 `public/`，Vercel 的构建命令使用同一命令，输出目录为 `public`。
+静态产物输出到 `public/`。Vercel 会先初始化主题子模块，并使用 Hugo `0.167.0` 构建到同一目录。
 
 ## 目录说明
 
 - `content/`：Markdown 页面与文章
-- `static/`：自定义静态文件
-- `themes/github-style/`：GitHub Style 主题子模块
+- `assets/css/extended/`：PaperMod 扩展样式
+- `themes/PaperMod/`：PaperMod 主题子模块
 - `hugo.toml`：站点配置

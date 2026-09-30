@@ -2,26 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
-.markdown-body {
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
-.markdown-body code,
-.markdown-body pre,
-.text-mono {
+code,
+pre,
+kbd,
+samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
-.pinned-item-list-item {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.pinned-item-list-item:hover {
-  border-color: var(--color-accent-fg, #0969da);
-  box-shadow: 0 1px 3px rgba(31, 35, 40, 0.12);
-}
-
-.markdown-body a {
+.post-content a {
   text-underline-offset: 2px;
 }
 

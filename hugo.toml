@@ -2,24 +2,85 @@ baseURL = "/"
 locale = "zh-CN"
 defaultContentLanguage = "zh-cn"
 title = "个人技术笔记"
-theme = "github-style"
+theme = "PaperMod"
 enableRobotsTXT = true
 
 [pagination]
   pagerSize = 10
 
 [params]
+  env = "production"
   author = "hhhPixar"
   description = "记录编程、工程实践与持续学习。"
-  github = "hhhPixar"
-  url = "/"
-  rss = true
-  lastmod = true
-  enableSearch = true
-  userStatusEmoji = "💻"
-  avatar = "https://github.com/hhhPixar.png"
-  headerIcon = "/images/github-mark-white.png"
-  custom_css = ["css/custom.css"]
+  mainSections = ["post"]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  ShowRssButtonInSectionTermList = true
+
+  [params.profileMode]
+    enabled = true
+    title = "个人技术笔记"
+    subtitle = "记录编程、工程实践与持续学习。"
+    imageUrl = "https://github.com/hhhPixar.png"
+    imageTitle = "hhhPixar"
+    imageWidth = 120
+    imageHeight = 120
+
+    [[params.profileMode.buttons]]
+      name = "文章"
+      url = "/post/"
+
+    [[params.profileMode.buttons]]
+      name = "关于"
+      url = "/about/"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/hhhPixar"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    threshold = 0.4
+    keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+  name = "文章"
+  url = "/post/"
+  weight = 10
+
+[[menu.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 30
+
+[[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 40
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 50
+
+[[menu.main]]
+  name = "订阅"
+  url = "/index.xml"
+  weight = 60
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]

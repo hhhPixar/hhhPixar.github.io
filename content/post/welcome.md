@@ -2,7 +2,7 @@
 title: "开始记录"
 date: 2026-09-29
 draft: false
-pin: true
+weight: 1
 tags: ["笔记", "Hugo", "工程实践"]
 categories: ["随笔"]
 summary: "个人技术笔记的第一篇文章：从可复现、可维护的方式开始记录。"
