@@ -21,23 +21,6 @@ enableRobotsTXT = true
   ShowToc = true
   ShowRssButtonInSectionTermList = true
 
-  [params.profileMode]
-    enabled = true
-    title = "个人技术笔记"
-    subtitle = "记录编程、工程实践与持续学习。"
-    imageUrl = "https://github.com/hhhPixar.png"
-    imageTitle = "hhhPixar"
-    imageWidth = 120
-    imageHeight = 120
-
-    [[params.profileMode.buttons]]
-      name = "文章"
-      url = "/post/"
-
-    [[params.profileMode.buttons]]
-      name = "关于"
-      url = "/about/"
-
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/hhhPixar"

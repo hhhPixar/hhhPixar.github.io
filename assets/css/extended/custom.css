@@ -17,6 +17,11 @@ samp {
   text-underline-offset: 2px;
 }
 
+.post-content img[alt="hhhPixar"] {
+  width: 120px;
+  border-radius: 50%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
