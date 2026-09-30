@@ -1,11 +1,5 @@
 {
   "framework": "hugo",
-  "buildCommand": "hugo --gc --minify --baseURL https://$VERCEL_URL",
-  "outputDirectory": "public",
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index.html"
-    }
-  ]
+  "buildCommand": "git submodule update --init --recursive && hugo --gc --minify --baseURL https://$VERCEL_URL",
+  "outputDirectory": "public"
 }
