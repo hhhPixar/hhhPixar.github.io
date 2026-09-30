@@ -13,6 +13,7 @@ enableRobotsTXT = true
   author = "hhhPixar"
   description = "记录编程、工程实践与持续学习。"
   mainSections = ["post"]
+  disableSpecial1stPost = true
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowPostNavLinks = true
